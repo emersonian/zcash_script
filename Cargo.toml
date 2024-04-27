@@ -72,8 +72,8 @@ tracing = "0.1"
 zcash_address = "0.3"
 zcash_encoding = "0.2"
 zcash_note_encryption = "0.4"
-zcash_primitives = { version = "=0.13.0", features = ["temporary-zcashd", "transparent-inputs"] }
-zcash_proofs = { version = "=0.13.0", features = ["directories"] }
+zcash_primitives = { git = "https://github.com/emersonian/librustzcash", branch = "primitives-0.13.1", features = ["temporary-zcashd", "transparent-inputs"] }
+zcash_proofs = { git = "https://github.com/emersonian/librustzcash", branch = "proofs-0.13.1", features = ["directories"] }
 bridgetree = "0.4"
 rand = "0.8"
 
@@ -100,7 +100,7 @@ syn = { version = "1.0.109", features = ["full", "printing"] }
 hex = ">= 0.4.3"
 lazy_static = "1.4.0"
 incrementalmerkletree = { version = "0.5", features = ["test-dependencies"] }
-zcash_primitives = { version = "=0.13.0", features = ["temporary-zcashd", "transparent-inputs", "test-dependencies"] }
+zcash_primitives = { git = "https://github.com/emersonian/librustzcash", branch = "primitives-0.13.1", features = ["temporary-zcashd", "transparent-inputs", "test-dependencies"] }
 
 [[package.metadata.release.pre-release-replacements]]
 file = "CHANGELOG.md"
